@@ -8,5 +8,5 @@ const btn = document.querySelector('.change-color')
 const spanText = document.querySelector('.color')
 btn.addEventListener('click', () => {
     bodyBackgroundColor.style.backgroundColor = getRandomHexColor()
-    spanText.textContent = getRandomHexColor()
+    spanText.textContent = bodyBackgroundColor.style.backgroundColor
 })
